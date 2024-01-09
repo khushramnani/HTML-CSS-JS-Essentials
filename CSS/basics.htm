@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basics of css</title>
+    <!-- from this we can link one doc to another for external #css  -->
+    <link rel="stylesheet" href="external css.css">
+
+    <!-- this is internal css -->
+    <style>
+p{
+
+    background-color: chocolate;
+    color: white;
+}
+.internal{
+
+background-color: aqua;
+}
+
+    </style>
+</head>
+<body>
+    <h3>inline ,internal, and external css</h3>
+    <!-- this is inline css -->
+    <strong style="background-color: pink;"> this is from inline css </strong>
+
+                    <!-- this is internal css  -->
+    <p>this is paragraph</p>
+    
+    <p class="internal">this is another paragraph</p>
+         
+             <!-- external css  -->
+
+<p class="external">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus corrupti similique soluta alias omnis placeat quod eos est, fuga ex. Omnis quae delectus nostrum vel dolorem magnam exercitationem dolores ut!</p>
+
+<h3>selectors in css </h3>
+
+<!-- id selector  -->
+<p id="first">the id selector is only made for once </p>
+
+
+<!-- class selecteor  -->
+
+<p class="abc"> in class selector we can make unlimited class and can use more than once </p>
+
+
+<!-- gropping selector  -->
+
+<span>this is span </span>
+<footer>this is footer</footer>
+
+<!-- footer, span{
+    Background-color: pink;
+} -->
+
+
+
+
+</body>
+</html>

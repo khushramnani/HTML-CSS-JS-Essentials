@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: blueviolet;
+
+        }
+
+        .box {
+            height: 250px;
+            width: 250px;
+            background-color: #43434a;
+            position: relative;
+            animation: khush 5s ease-in-out 0s infinite forwards alternate;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            /* 
+            1 animation-fill-mode:
+                If we want to keep the last property applied to the animation then we can set the animation-fill-property as forward as follows- animation-fill-mode: forward; */
+
+            /* 2.animation-timing-function:
+                We can define this property with three different values- ease-in After applying this, the animation will start slowly and becomes fast towards the end. ease-out After applying this, the animation will begin fastly and become slow towards the end. ease-in-out After applying this, the animation will start slowly, then become fast in the midway, and ends slowly. animation-delay It is used to define the time after which the animation will start. */
+
+            /* 3.animation-direction:
+                This property is used to define the direction of the animation. For example, if we select it as reverse, it will move the animation in reverse direction. animation-direction: reverse;
+
+            animation-delay It is used to define the time after which the animation will start. animation-delay: 3s; */
+        }
+
+        @keyframes khush {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+
+        }
+
+   
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>this is animated box</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px ;
+            padding: 0px ;
+        }
+        .container{
+            display: flex;
+            background-color: cornsilk;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #box{
+              background-color: brown;      
+              border: 2px solid black;
+              height: 250px ;
+              width: 250px ;
+              align-items: center;
+              display: flex;
+              justify-content: center;
+               /* Transition short hand property in one line */
+        /* transition: background-color 1s ease-in-out 2s; */
+              transition: all 1s ease-in-out 0s;
+              animation-name: khush;
+             
+
+        }
+        #box:hover{
+            background-color: rgb(136, 108, 108);
+            font-size: 50px ;
+            transform:rotate(360deg);
+            
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+            this is box 
+        </div>
+    </div>
+</body>
+</html>

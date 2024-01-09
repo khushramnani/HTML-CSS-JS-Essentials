@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+             
+            
+        }
+        .box{
+            background-color: #cbb7b7;
+            border: 2px solid ;
+            display: inline-block;
+            
+             width: 188px;
+            height: 121px;
+            
+}
+        #box2{
+            /* in relative position we can change the location of the box */
+            /* position: relative; */
+            /* float: right; */
+            /* top: 40px;
+            left: 40px; */
+        }
+        #box3{
+            position:absolute ;
+        }
+        #box4{
+            position: fixed;
+        }
+        #box4{
+            position: sticky;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <!-- Types Of Position Property :
+There are five types of position property :
+
+static
+
+relative
+
+absolute
+
+fixed
+
+sticky -->
+    <div class="container">
+        <div class="box" id="box1">static</div>
+        <div class="box" id="box2">relative</div>
+        <div class="box" id="box3">absolute</div>
+        <div class="box" id="box4">fixed</div>
+        <div class="box" id="box5">sticky</div>
+    </div>
+    
+</body>
+</html>
