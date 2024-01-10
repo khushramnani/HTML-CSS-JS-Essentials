@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating element from js in html</title>
+
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="languages">
+        <li>javascript</li>
+    </div>
+</body>
+
+<script>
+
+// const div = document.createElement('Div')
+// div.className = "languages"
+// div.setAttribute("title", "programing-languages")
+// div.style.backgroundColor ="gray"
+// console.log(div);
+
+
+// 1)
+// function addlanguage(langname){
+//     const li = document.createElement('li')
+//     li.innerHTML = `${langname}`
+//     document.querySelector('.languages').appendChild(li)
+// }
+// addlanguage("python")
+
+// 2)
+function secondMethod(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.languages').appendChild(li)
+    }
+    secondMethod('golang')
+    secondMethod('python')
+    secondMethod('java')
+
+
+
+
+//edit    => edit javascrit to js
+
+const firstlang = document.querySelector('li:first-child')
+firstlang.outerHTML = `<li> js </li>`
+
+
+// => edit python to typescript with other method
+
+const newlang = document.querySelector('li')
+const secondchild = document.querySelector('li:nth-child(3)')
+
+newlang.textContent = "typescript"
+secondchild.replaceWith(newlang)
+
+
+//remove
+
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove()
+
+
+</script>
+
+
+
+
+
+
+</html>

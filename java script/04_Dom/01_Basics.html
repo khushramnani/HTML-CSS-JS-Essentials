@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom in js</title>
+</head>
+
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+</style>
+
+
+<!-- 
+4 pillars of Dom manuplation
+1) selecting element 
+2) changing html 
+3) changing Css
+4) event listener  -->
+
+
+<body>
+    <div class="Weekdays">
+        <li class="days">Monday</li>
+        <li class="days">Tuesday</li>
+        <li class="days">Wednesday</li>
+        <li class="days">Thursday</li>
+        <li class="days">Friday</li>
+        <li class="days">Saturday</li>
+</body>
+
+<script>
+    const parent = document.querySelector('.Weekdays')
+    console.log(parent);
+    console.log(parent.children); //it provides html collection of all the children available on parent(weekdays)
+    console.log(parent.children[1].innerHTML); //tuesday
+
+    // we can also changed the content 
+    parent.children[0].innerHTML = "Boring Day"
+    console.log(parent);
+
+    //Adding css
+    let addCss = parent.children[5]
+    addCss.style.backgroundColor = "orange"
+    console.log(addCss);
+
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+    
+    const days = document.querySelector('.days')
+    console.log(days.parentElement);  //weekdays
+    console.log(days.parentNode); //weekdays with their chidrens
+    console.log(days.firstElementChild); //null 
+    console.log(days.nextElementSibling); //Tuesday
+
+
+    console.log("parent Nodes" , parent.parentNode);
+
+    console.log("Child Nodes" , parent.childNodes);
+    // all lines under the parent are cound in chilnodes 
+    
+
+
+
+</script>
+</html>
